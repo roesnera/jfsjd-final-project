@@ -15,12 +15,13 @@ For this task, we'll implement the backend of our web application using Spring B
 In this step, we'll generate a Spring Boot project using the [spring initializr](https://start.spring.io/)
 
 1. Go to the [spring initializr](https://start.spring.io/) and generate a new project with the following configuration:
-   - Project: Gradle Project
+   - Project: Maven Project
    - Language: Java
    - Dependencies: Spring Web and Spring Data JPA (SQL)
    - Project Metadata: use meaningful names that describe your project, use Jar for packaging and select the Java version installed on your computer.
      <img src="./img/project-setup-spring-boot.png">
 2. Click on Generate.
+   ([Here](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=18&groupId=com.example&artifactId=itemsAPI&name=itemsAPI&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.itemsAPI&dependencies=web,data-jpa,mysql) is a pre-initialized project link)
 3. Create a new repo on Github for the backend and upload the generated code.
 
 > #### Test Your Code!
