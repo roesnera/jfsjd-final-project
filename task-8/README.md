@@ -17,7 +17,7 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
 1. Go to the [spring initializr](https://start.spring.io/) and generate a new project with the following configuration:
    - Project: Maven Project
    - Language: Java
-   - Dependencies: Spring Web and Spring Data JPA (SQL)
+   - Dependencies: Spring Web, Spring Data JPA (SQL), and the MySQL Driver
    - Project Metadata: use meaningful names that describe your project, use Jar for packaging and select the Java version installed on your computer.
      <img src="./img/SpringInit.png">
 2. Click on Generate.
