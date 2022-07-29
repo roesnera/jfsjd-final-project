@@ -19,7 +19,7 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
    - Language: Java
    - Dependencies: Spring Web and Spring Data JPA (SQL)
    - Project Metadata: use meaningful names that describe your project, use Jar for packaging and select the Java version installed on your computer.
-     <img src="./img/project-setup-spring-boot.png">
+     <img src="./img/SpringInit.png">
 2. Click on Generate.
    ([Here](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=18&groupId=com.example&artifactId=itemsAPI&name=itemsAPI&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.itemsAPI&dependencies=web,data-jpa,mysql) is a pre-initialized project link)
 3. Create a new repo on Github for the backend and upload the generated code.
@@ -56,12 +56,6 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
    spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/itemsdb
    spring.datasource.username=admin
    spring.datasource.password=passw0rd
-   ```
-
-3. Add the following dependency to your build.gradle
-
-   ```gradle
-       runtimeOnly 'mysql:mysql-connector-java'
    ```
 
 #### Test Your Code!
