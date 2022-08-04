@@ -17,7 +17,7 @@ In this step, we'll use the Fetch API to consume the save item endpoint.
 1. In `js/ItemsController.js`, implement a new function called `save` that will POST the new item's data using the `fetch` function:
 
    ```javascript
-       save({name, description, imageUrl}){
+       save(name, description, imageUrl){
                const data = { name,  description, imageUrl };
 
                fetch('http://localhost:8080/item', {
