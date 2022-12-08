@@ -21,15 +21,8 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
    - Project Metadata: use meaningful names that describe your project, use Jar for packaging and select the Java version installed on your computer.
      <img src="./img/SpringInit.png">
 2. Click on Generate.
-   ([Here](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=18&groupId=com.example&artifactId=itemsAPI&name=itemsAPI&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.itemsAPI&dependencies=web,data-jpa,mysql) is a pre-initialized project link)
+   ([Here](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.0.0&packaging=jar&jvmVersion=19&groupId=com.example&artifactId=itemsAPI&name=itemsAPI&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.itemsAPI&dependencies=web,data-jpa,mysql) is a pre-initialized project link)
 3. Create a new repo on Github for the backend and upload the generated code.
-
-> #### Test Your Code!
->
-> Now is a good chance to test your code, open your project on the Java IDE and run the main class within your Application class.
->
-> **Expected Result**
-> You should see the server is started correctly and no error is shown on the console.
 
 ### Step 2: Database Connection with Spring Data JPA
 
@@ -40,22 +33,20 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
 
 In this step, we'll connect the Spring Boot project with the MySQL database created on [task 7](https://github.com/generation-org/jfsjd-final-project/tree/main/task-7).
 
-1. Make sure you create the database user and grant access to your database:
 
-   ```bash
-       mysql> create user 'admin'@'%' identified by 'passw0rd'; -- Creates the user
-       mysql> grant all on itemsdb.* to 'admin'@'%'; -- Gives all privileges to the new user on the newly created database
-   ```
-
-2. Add the following properties to the src/main/resources/application.properties:
+1. Add the following properties to the src/main/resources/application.properties:
 
    ```yaml
-   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-   spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-   spring.jpa.hibernate.ddl-auto=none
-   spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/itemsdb
-   spring.datasource.username=admin
-   spring.datasource.password=passw0rd
+      ## the username of the user I created in the MySQL workbench
+      spring.datasource.username=aaroe
+      ## the password for that user
+      spring.datasource.password=myPassword
+      ## "item" here refers to the name of the database I created
+      spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/item
+      ## the remaining lines should be the same for everyone
+      spring.jpa.hibernate.ddl-auto=update
+      spring.jpa.show-sql=true
+      spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
    ```
 
 #### Test Your Code!
@@ -72,10 +63,10 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
    ```java
        package org.generation.ItemsAPI.repository.entity;
 
-       import javax.persistence.Entity;
-       import javax.persistence.GeneratedValue;
-       import javax.persistence.GenerationType;
-       import javax.persistence.Id;
+       import jakarta.persistence.Entity;
+       import jakarta.persistence.GeneratedValue;
+       import jakarta.persistence.GenerationType;
+       import jakarta.persistence.Id;
 
        @Entity
        public class Item
