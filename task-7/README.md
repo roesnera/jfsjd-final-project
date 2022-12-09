@@ -19,7 +19,7 @@ In this step, we'll create a EER Model to represent the application data layer.
    <img src="https://i.gyazo.com/0ffaf27f9a9d93a950a9940100d32ec6.png">
 
 
-### Step 2: Connecting your database and creating your database table using Spring Data JPA
+### Step 2: Create the credentials that you will give to Spring Data JPA in Task 8
 
 In this step, we'll add a user on the MySQL server that we will allow Spring Data JPA to use in order to create and manage our table/entries.
 
