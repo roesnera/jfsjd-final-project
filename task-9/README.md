@@ -16,27 +16,11 @@ over your data model using the HTTP protocol.
 In this step, we'll define our Service interface and create an implentation that handles the interaction with MySQL Database. An interface is a structure or syntax that allows software developers to define a component's behavior without worrying about the implementation.
 
 1. Create a new package in your Spring Boot project called `service`
-2. Create the `ItemService` interface with the functions needed to implement the Items CRUD:
+2. Create the `ItemService` class with the functions needed to implement the Items CRUD:
 
    ```java
-        public interface ItemService
-        {
-
-            Item save( Item item );
-
-            boolean delete( int itemId );
-
-            List<Item> all();
-
-            Item findById( int itemId );
-
-        }
-   ```
-
-3. Create an implementation of the `ItemService` called `ItemServiceMySQL` and inject the `ItemRepository`.
-
-   ```java
-           public class ItemServiceMySQL implements ItemService
+           @Service
+           public class ItemService
            {
                private final ItemRepository itemRepository;
 
@@ -45,27 +29,27 @@ In this step, we'll define our Service interface and create an implentation that
                    this.itemRepository = itemRepository;
                }
 
-               @Override
+               
                public Item save( Item item )
                {
                    //TODO implement this method
                    return null;
                }
 
-               @Override
+               
                public void delete( int itemId )
                {
                    //TODO implement this method
                }
 
-               @Override
+               
                public List<Item> all()
                {
                    //TODO implement this method
                    return null;
                }
 
-               @Override
+               
                public Item findById( int itemId )
                {
                    //TODO implement this method
@@ -75,8 +59,8 @@ In this step, we'll define our Service interface and create an implentation that
 
    ```
 
-4. Implement the methods so you persist and retrieve your data using the `ItemRepository`.
-5. Annotate the `ItemServiceMySQL` with `@Service` so it can be injected into the `ItemController`
+3. Implement the methods so you persist and retrieve your data using the `ItemRepository`.
+4. Annotate the `ItemService` with `@Service` so it can be injected into the `ItemController`
 
    > #### Test Your Code!
    >
