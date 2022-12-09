@@ -56,7 +56,7 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
 > **Expected Result**
 > Your application should start and connect with your database, no error should be displayed on the console.
 
-### Step 3: Interacting with the Database form your Spring Boot Project
+### Step 3: Interacting with the Database from your Spring Boot Project
 
 1. Create new package called `repository.entity` and define the @Entity Model class:
 
