@@ -82,6 +82,42 @@ Now that we have made the implementation of the `save` function to consume the `
 9. Change your code so the save button calls the `delete` function.
 10. Test the `delete` function (make sure you send an existing item id)
 
+Don't forget to (tell maven to) bundle your front- and backend together when you create your jar file!
+   ```java
+   <profiles>
+		<profile>
+			<id>build-frontend</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-resources-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>copy-build-folder</id>
+								<phase>process-classes</phase>
+								<goals>
+									<goal>copy-resources</goal>
+								</goals>
+								<configuration>
+									<resources>
+										<resource>
+											<directory>src/frontend/build</directory>
+										</resource>
+									</resources>
+									<outputDirectory>${basedir}/target/classes/static</outputDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+   ```
+
 ## Results
 
 Now you have all the methods to consume the REST API CRUD operations. Congratulations!
