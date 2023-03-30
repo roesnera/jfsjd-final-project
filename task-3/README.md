@@ -15,7 +15,7 @@ Create the basic structure for the project with the navigation working:
 
 ### Step 1: Implement the home page
 
-In this step, we'll create a basic HTML structure for the home page which includes [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+In this step, we'll create a basic HTML structure for the home page which may include [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 1. Create a new file called `index.html` inside your project folder.
 2. Include your `styles.css` file inside the `index.html` page.
@@ -31,8 +31,8 @@ In this step, we'll create a basic HTML structure for the home page which includ
 3. Create a sample list with some sample data to see how your items list will look like
 
 > #### Useful Resources for this step
-> - [List group](https://getbootstrap.com/docs/4.5/components/list-group/)
-> - [Cards](https://getbootstrap.com/docs/4.5/components/card/)
+> - [List group](https://getbootstrap.com/docs/5.3/components/list-group/)
+> - [Cards](https://getbootstrap.com/docs/5.3/components/card/)
 
 ### Step 3: Implementing your Login page (Optional)
 
@@ -41,7 +41,7 @@ In this step, we'll create a basic HTML structure for the home page which includ
 3. Add a Login button.
 
 > #### Useful Resources for this step
-> - [Forms](https://getbootstrap.com/docs/4.5/components/forms/)
+> - [Forms](https://getbootstrap.com/docs/5.3/components/forms/)
 
 ### Step 4: Implementing your model form page
 
@@ -50,20 +50,19 @@ In this step, we'll create a basic HTML structure for the home page which includ
 3. Add a Save button.
 
 > #### Useful Resources for this step
-> - [Forms](https://getbootstrap.com/docs/4.5/components/forms/)
+> - [Forms](https://getbootstrap.com/docs/5.3/components/forms/)
 
 ### Step 5: Adding a Navigation Bar
 
-1. Understand how the [Navbar](https://getbootstrap.com/docs/4.5/components/navbar/) works.
-2. Add a Navbar with the menu options for each page
+1. Add a Navbar with the menu options for each page
     * Home
     * About Us
     * Items List
     * Model Form
-3. Add a link to each menu item so it redirects to expected html page.
+2. Add a link to each menu item so it redirects to expected html page.
 
 > #### Useful Resources for this step
-> - [Navbar](https://getbootstrap.com/docs/4.5/components/navbar/)
+> - [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/)
 
 
 > #### Test Your Code!
@@ -71,7 +70,7 @@ In this step, we'll create a basic HTML structure for the home page which includ
 
 ## Results
 
-We've now create the basic html pages of your project using Bootstrap!
+We've now create the basic html pages of your project!
 
 ## Example
 
