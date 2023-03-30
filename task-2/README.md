@@ -20,7 +20,7 @@ Create a private GitHub repository that is shared among your groupmates and your
 
 ### Step 1: Create the page structure
 
-In this step, we'll create a basic HTML structure and include [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+In this step, we'll create a basic HTML structure. You may choose to include [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 1. Create a new file called `about.html` in your project folder.
 2. Create a new file called `styles.css` and put this file inside a folder called `css` in your project folder.
@@ -29,8 +29,9 @@ In this step, we'll create a basic HTML structure and include [Bootstrap](https:
 
 ### Step 2: Implementing your About page
 
-Go through the different [Bootstrap components](https://getbootstrap.com/docs/4.5/components/alerts/) and select the ones that are similar 
-to your wireframes structure created on Task 1.
+Now it is time to work on your about page styling. You will work to bring your wireframed about page to life!
+
+If you have chosen to use bootstrap, go through the different [Bootstrap components](https://getbootstrap.com/docs/4.5/components/alerts/) and select the ones that are similar to your wireframes structure created on Task 1.
 
 
 > #### Useful Resources for this step
@@ -41,7 +42,7 @@ to your wireframes structure created on Task 1.
 
 ## Results
 
-We've now set up the `about.html` page, created with Bootstrap! Congratulations! 
+We've now set up the `about.html` page! Congratulations! 
 
 ## Example
 
