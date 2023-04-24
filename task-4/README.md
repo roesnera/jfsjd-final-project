@@ -12,10 +12,10 @@ For this task, we'll be
 
 In this step, we'll re-organise our folder structure in preparation for the next few steps.
 
-1. Create a `js` folder in your project if one does not already exist
-2. Copy the existing js file into your `js` folder, and rename it to `index.js`
-3. Update the `<script>` tag in your `html` file to use the new location of the `js/index.js` file.
-4. Create a `itemsController.js` file in the `js` folder
+1. Create a `scripts` folder in the root folder of your project
+2. Create a new JavaScript file called `item.js`
+3. Add a `<script>` tag to your `products.html` or `posts.html` file pointing to the `scripts/item.js` file
+4. Create a `itemsController.js` file in the `scripts` folder
 5. Add a `<script>` tag pointing to the `js/itemsController.js` file _before_ the `<script>` tag pointing to the `js/index.js` file.
 
 ### Step 2: The ItemsController Class
