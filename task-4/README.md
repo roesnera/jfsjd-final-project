@@ -44,7 +44,7 @@ Always aim to use meaningful and long names to make your code more readable. We 
 
 ### Step 3: Adding A New Item Programmatically
 
-In this step, we'll add a method to the `ItemsController` class that will allow us to add new items to array.
+In this step, we'll add a method to the `ItemsController` class that will allow us to add new items to an array.
 
 As part of this process, we're going to create a unique `id` for each item.
 
