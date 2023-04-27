@@ -8,8 +8,8 @@ For this task, we'll be creating new Items using a form and validating the input
 
 ### Step 1: The Setup
 
-1. Create a new file called `item-form.js` inside the `js` folder.
-2. Add a `<script>` tag in your `item-form.html` file to include the `js/item-form.js` file.
+1. Open the `item-form.js` you created in Task 3.
+2. Add a `<script>` tag in your `item-form.html` file to include the `scripts/item-form.js` file.
 
 ### Step 2: Adding Items With The Form
 

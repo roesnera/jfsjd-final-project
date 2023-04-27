@@ -10,9 +10,9 @@ For this task, we'll be creating the feature to display the objects list of the 
 
 ### Step 1: Define the item card layout
 
-In this step, we'll create the item representation using the [card component](https://getbootstrap.com/docs/4.4/components/card/)
+In this step, we'll create the item representation using the Bootstrap card component
 
-1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
+1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/5.3/components/card/)
 2. Define the HTML structure of the item card representation.
 3. Add a `div` element with id `list-items` to add your list items dynamically with JavaScript. 
 4. Add 3 different sample item cards inside your `div` element.
@@ -69,7 +69,7 @@ reference(make sure you save the data as a String).
     }
 ```
 
-3. Implement a new function in the `items.js` that loads the items from the `ItemsController` using the function you already implemented `addItemCard(item)`.
+3. Implement a new function in the `items.js` that loads the items from the `ItemsController` using the function you already implemented `addItemCard(item)`.  Don't forget to create a new instance of `ItemController` at the top of your `items.html`. 
 
 4. Modify the `items.js` so it calls the `loadItemsFromLocalStorage()` and then iterate the `ItemsController.items` list to load the items into your  `items.html` page using the function implemented from  `addItemCard(item)`
 
