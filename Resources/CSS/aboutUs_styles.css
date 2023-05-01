@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+}
+
+.member_photo {
+    max-width: 20%;
+    height: auto;
+}
+
+.team_member_bio {
+    /*border: red solid;*/
+    margin-bottom: 0.5rem;
+    background-color: whitesmoke;
+}
