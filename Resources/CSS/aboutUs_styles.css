@@ -9,6 +9,7 @@ body {
 
 .team_member_bio {
     /*border: red solid;*/
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     background-color: whitesmoke;
 }
