@@ -24,7 +24,7 @@ In this step, we'll define our Service interface and create an implentation that
            {
                private final ItemRepository itemRepository;
 
-               public ItemServiceMySQL(@Autowired ItemRepository itemRepository )
+               public ItemServiceMySQL(ItemRepository itemRepository )
                {
                    this.itemRepository = itemRepository;
                }
