@@ -134,7 +134,7 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
     import org.springframework.data.jpa.repository.JpaRepository;
 
     // This will be AUTO IMPLEMENTED by Spring into a Bean called itemRepository
-    // CRUD refers Create, Read, Update, Delete
+    // CRUD refers to Create, Read, Update, Delete
     public interface ItemRepository extends JpaRepository<Item, Integer>
     {
     }
@@ -150,7 +150,7 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
        final ItemRepository itemRepository;
 
 
-       public ItemController(@Autowired ItemRepository itemRepository )
+       public ItemController(ItemRepository itemRepository )
        {
            this.itemRepository = itemRepository;
        }
